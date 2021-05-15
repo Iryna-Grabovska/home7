@@ -1,0 +1,38 @@
+.features {
+  background: var(--text-white);
+  padding-top: 94px;
+}
+.features-list {
+  display: flex;
+}
+.feature-list__item {
+  flex-basis: 270px;
+}
+.feature-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+.features-rectangle {
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--bg-cl-icon);
+  border-radius: 4px;
+}
+.our-team__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.desc {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--pargf-cl);
+  margin-bottom: 16px;
+}

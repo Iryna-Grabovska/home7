@@ -1,0 +1,45 @@
+.our-team {
+  background-color: var(--bg-cl-icon);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.our-team__list {
+  display: flex;
+}
+.our-team__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-team__card {
+  background-color: var(--text-white);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+}
+.our-team__content {
+  padding: 30px 32px;
+}
+.our-team__social {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  color: var(--icon-cl);
+  background-color: inherit;
+  fill: currentColor;
+  transition: background-color var(--animation), color var(--animation);
+}
+.social-list__link:hover,
+.social-list__link:focus {
+  color: var(--text-white);
+  background-color: var(--btn-cl);
+}
