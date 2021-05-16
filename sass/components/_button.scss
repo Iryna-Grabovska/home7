@@ -3,10 +3,10 @@
   line-height: 1.81;
   font-size: 16px;
   font-weight: 700;
-  background: var(--btn-cl);
+  background: $btn-cl;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--text-white);
+  color: $text-white;
   cursor: pointer;
   width: 145px;
   height: 38px;
@@ -17,11 +17,11 @@
   left: 700px;
   top: 430px;
   border-style: none;
-  transition: background-color var(--animation), color var(--animation);
+  transition: background-color $animation, color $animation;
 }
 .btn {
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: $btn-cl;
   }
 }

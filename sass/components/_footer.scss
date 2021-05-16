@@ -5,22 +5,22 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--dark-bg);
-  color: var(--text-white);
+  background-color: $dark-bg;
+  color: $text-white;
   text-decoration: none;
   padding-left: 0;
   padding-right: 0;
 }
 .footer .footer-address:hover,
 .footer .footer-address:focus {
-  color: var(--btn-cl);
+  color: $btn-cl;
 }
 .footer .footer-contakts:hover,
 .footer .footer-contakts:focus {
-  color: var(--btn-cl);
+  color: $btn-cl;
 }
 .logo-studio-footer {
-  color: var(--text-white);
+  color: $text-white;
   line-height: 1.2;
   /* or 171% */
   letter-spacing: 0.03em;
@@ -34,7 +34,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  color: var(--text-white);
+  color: $text-white;
   line-height: 1.14;
   /* or 171% */
 
@@ -42,7 +42,7 @@
   text-decoration: none;
   margin-bottom: 9px;
   margin-top: 20px;
-  transition: background-color var(--animation), color var(--animation);
+  transition: background-color $animation, color $animation;
 }
 .footer-contakts-list {
   font-family: Roboto;
@@ -87,7 +87,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--text-white);
+  color: $text-white;
   display: inline-block;
   margin-bottom: 20px;
   margin-top: 0;
@@ -105,14 +105,14 @@
 
   border-radius: 50%;
   text-decoration: none;
-  fill: var(--text-white);
+  fill: $text-white;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--animation), color var(--animation);
+  transition: background-color $animation, color $animation;
 }
 .footer-social__link:hover,
 .footer-social__link:focus {
-  color: var(--text-white);
-  background-color: var(--btn-cl);
+  color: $text-white;
+  background-color: $btn-cl;
 }
 .footer-subscribtion {
   display: block;

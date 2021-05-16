@@ -11,17 +11,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: var(--dark-bg);
+  background-color: $dark-bg;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 .herro-title {
-  font-family: var(--maim-font);
+  font-family: $maim-font;
   margin-top: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: var(--text-white);
+  color: $text-white;
   margin-bottom: 30px;
 }

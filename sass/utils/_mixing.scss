@@ -22,9 +22,9 @@ p {
   box-sizing: inherit;
 }
 .page {
-  background-color: var(--text-white);
-  font-family: var(--maim-font);
-  color: var(--main-text-cl);
+  background-color: $text-white;
+  font-family: $maim-font;
+  color: $main-text-cl;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -50,7 +50,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-text-cl);
+  color: $main-text-cl;
   margin-bottom: 10px;
 }
 .header {
@@ -59,11 +59,11 @@ p {
 }
 .line {
   position: relative;
-  color: var(--accent-color);
+  color: $btn-cl;
 }
 .line::after {
   content: "";
-  margin-top: 29px;
+  margin-top: 45px;
   padding: -1px;
   position: absolute;
   display: block;
@@ -81,7 +81,7 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: visibility var(--animation), opacity var(--animation);
+  transition: visibility $animation, opacity $animation;
 }
 
 .backdrop.is-hidden {

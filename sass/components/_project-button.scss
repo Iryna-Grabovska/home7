@@ -1,32 +1,32 @@
 .our-services {
-  background-color: var(--text-white);
+  background-color: $text-white;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .our-services .our-services__button:hover,
 .our-services .our-services__button:focus {
-  background-color: var(--btn-cl);
-  color: var(--text-white);
+  background-color: $btn-cl;
+  color: $text-white;
 }
 .project-button {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
-.button-list {
+.project-button__list {
   display: flex;
   justify-content: center;
 }
-.button-item:not(:last-child) {
+.project-button__item:not(:last-child) {
   margin-right: 8px;
 }
 .our-services__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  color: var(--main-text-cl);
-  background: #f5f4fa;
+  color: $main-text-cl;
+  background: $bg-cl-icon;
   cursor: pointer;
   display: inline-block;
   border-radius: 4px;

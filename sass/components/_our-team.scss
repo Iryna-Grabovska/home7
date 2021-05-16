@@ -1,5 +1,5 @@
 .our-team {
-  background-color: var(--bg-cl-icon);
+  background-color: $bg-cl-icon;
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -10,7 +10,7 @@
   margin-right: 30px;
 }
 .our-team__card {
-  background-color: var(--text-white);
+  background-color: $text-white;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -33,13 +33,13 @@
   align-items: center;
 
   text-decoration: none;
-  color: var(--icon-cl);
+  color: $icon-cl;
   background-color: inherit;
   fill: currentColor;
-  transition: background-color var(--animation), color var(--animation);
+  transition: background-color $animation, color $animation;
 }
 .social-list__link:hover,
 .social-list__link:focus {
-  color: var(--text-white);
-  background-color: var(--btn-cl);
+  color: $text-white;
+  background-color: $btn-cl;
 }

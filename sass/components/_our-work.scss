@@ -1,5 +1,5 @@
 .our-work {
-  background: var(--text-white);
+  background: $text-white;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -12,7 +12,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--maim-font);
+  color: $maim-font;
   margin-bottom: 50px;
   margin-top: 0;
 }
@@ -37,7 +37,7 @@
   margin-bottom: 0;
   padding: 27px 0;
 
-  color: var(--text-white);
+  color: $text-white;
 }
 .our-work__eksempel {
   position: relative;

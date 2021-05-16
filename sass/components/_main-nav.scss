@@ -1,7 +1,6 @@
-@import "/sass/utils/variables";
 .main-nav {
   display: flex;
-  background: var(--text-white);
+  background: $text-white;
 }
 .nav {
   display: flex;
@@ -11,12 +10,10 @@
   align-items: center;
   display: flex;
 }
-.nav-list__item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.logo-studio {
-  color: var(--main-text-cl);
-}
+
 .site-nav__list {
   display: flex;
   margin-left: 93px;
@@ -24,24 +21,24 @@
 
 .nav .site-nav__link:hover,
 .nav .site-nav__link:focus {
-  color: var(--btn-cl);
+  color: $btn-cl;
 }
 
 .auth .auts-list__tel:hover,
 .auth .auts-list__tel:focus {
-  color: var(--btn-cl);
+  color: $btn-cl;
 }
 .auth .auts-list__link:hover,
 .auth .auts-list__link:focus {
-  color: var(--btn-cl);
+  color: $btn-cl;
 }
 .auts-list__tel:hover .auts-list__icon-tel,
 .auts-list__tel:focus .auts-list__icon-tel {
-  fill: var(--btn-cl);
+  fill: $btn-cl;
 }
 .auts-list__link:hover .auts-list__icon,
 .auts-list__link:focus .auts-list__icon {
-  fill: var(--btn-cl);
+  fill: $btn-cl;
 }
 .auts-list__link,
 .auts-list__tel {
@@ -50,21 +47,21 @@
 .site-nav__link {
   font-weight: 500;
   line-height: 1.14;
-  color: var(--main-text-cl);
+  color: $main-text-cl;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  transition: var(--animation);
+  transition: $animation;
 }
 .site-nav__link-studia {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--btn-cl);
+  color: $btn-cl;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  transition: background-color var(--animation), color var(--animation);
+  transition: background-color $animation, color $animation;
 }
 .auth-list {
   display: flex;
@@ -78,23 +75,28 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--pargf-cl);
+  color: $pargf-cl;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  transition: background-color var(--animation), color var(--animation);
+  transition: background-color $animation, color $animation;
+  &:hover,
+  &:focus {
+    color: $btn-cl;
+    fill: $btn-cl;
+  }
 }
 .auts-list__tel {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--pargf-cl);
+  color: $pargf-cl;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
   display: flex;
   text-align: center;
-  transition: background-color var(--animation), color var(--animation);
+  transition: background-color $animation, color $animation;
 }
 .contacts {
   margin-top: 20px;
@@ -104,5 +106,5 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--pargf-cl);
+  color: $pargf-cl;
 }

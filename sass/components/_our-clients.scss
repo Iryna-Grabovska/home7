@@ -2,7 +2,7 @@
   padding: 94px 0;
 }
 .our-clients__title {
-  color: var(--main-text-cl);
+  color: $main-text-cl;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -21,13 +21,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--icon-cl);
+  fill: $icon-cl;
   border-radius: 4px;
-  border: 1px solid var(--icon-cl);
-  transition: background-color var(--animation), color var(--animation);
+  border: 1px solid $icon-cl;
+  transition: background-color $animation, color $animation;
 }
 .our-clients__link:hover,
 .our-clients__link:focus {
-  border-color: var(--btn-cl);
-  fill: var(--btn-cl);
+  border-color: $btn-cl;
+  fill: $btn-cl;
 }
