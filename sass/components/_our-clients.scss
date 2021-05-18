@@ -25,9 +25,9 @@
   border-radius: 4px;
   border: 1px solid $icon-cl;
   transition: background-color $animation, color $animation;
-}
-.our-clients__link:hover,
-.our-clients__link:focus {
-  border-color: $btn-cl;
-  fill: $btn-cl;
+  &:hover,
+  &:focus {
+    border-color: $btn-cl;
+    fill: $btn-cl;
+  }
 }

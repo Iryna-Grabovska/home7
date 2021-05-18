@@ -11,14 +11,7 @@
   padding-left: 0;
   padding-right: 0;
 }
-.footer .footer-address:hover,
-.footer .footer-address:focus {
-  color: $btn-cl;
-}
-.footer .footer-contakts:hover,
-.footer .footer-contakts:focus {
-  color: $btn-cl;
-}
+
 .logo-studio-footer {
   color: $text-white;
   line-height: 1.2;
@@ -43,6 +36,11 @@
   margin-bottom: 9px;
   margin-top: 20px;
   transition: background-color $animation, color $animation;
+
+  .footer &:hover,
+  .footer &:focus {
+    color: $btn-cl;
+  }
 }
 .footer-contakts-list {
   font-family: Roboto;
@@ -56,24 +54,26 @@
 }
 .footer-contakts {
   color: rgba(255, 255, 255, 0.6);
+  .footer &:hover,
+  .footer &:focus {
+    color: $btn-cl;
+  }
+  &__title:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
-.post:not(:last-child) {
-  margin-bottom: 9px;
-}
-.footer-contakts-list:not(:last-child) {
-  margin-bottom: 9px;
-}
+
 .post {
   margin-left: 0;
   margin-right: 30px;
   width: 270px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 .footer-contakts__item {
   padding-left: 0px;
   margin: 0px;
-}
-.footer-contakts__title:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .footer-social {
@@ -108,12 +108,14 @@
   fill: $text-white;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color $animation, color $animation;
+
+  &:hover,
+  &:focus {
+    color: $text-white;
+    background-color: $btn-cl;
+  }
 }
-.footer-social__link:hover,
-.footer-social__link:focus {
-  color: $text-white;
-  background-color: $btn-cl;
-}
+
 .footer-subscribtion {
   display: block;
   padding-left: 90px;

@@ -26,11 +26,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    fill: $btn-cl;
+  }
 }
-.btn-close:focus,
-.btn-close:hover {
-  fill: $btn-cl;
-}
+
 .madal-container {
   padding: 40px;
 }
@@ -63,12 +65,7 @@
   outline: none;
   margin-bottom: 10px;
 }
-.feedback-textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: $icon-cl;
-}
+
 .feedback-textarea {
   padding: 12px 16px;
   resize: none;
@@ -78,24 +75,24 @@
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: $icon-cl;
+  }
+  &:focus {
+    border-color: $btn-cl;
+  }
 }
-.feedback-textarea:focus {
-  border-color: $btn-cl;
-}
+
 .modal-icons {
   display: block;
   position: absolute;
   bottom: 40px;
   left: 15px;
 }
-.modal-input:focus ~ .modal-icons {
-  fill: $btn-cl;
-}
 
-.modal-input:focus {
-  color: $btn-cl;
-  border-color: $btn-cl;
-}
 .modal-input {
   display: block;
   padding-top: 11px;
@@ -107,6 +104,15 @@
   border-radius: 4px;
   transition: $animation;
   outline: none;
+
+  &:focus ~ .modal-icons {
+    fill: $btn-cl;
+  }
+
+  &:focus {
+    color: $btn-cl;
+    border-color: $btn-cl;
+  }
 }
 .checkbox-link {
   color: $btn-cl;

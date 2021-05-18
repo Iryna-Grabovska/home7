@@ -3,12 +3,14 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
+
 .our-team__list {
   display: flex;
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.our-team__list-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .our-team__card {
   background-color: $text-white;
   text-align: center;
@@ -17,13 +19,16 @@
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
+
 .our-team__content {
   padding: 30px 32px;
 }
+
 .our-team__social {
   display: flex;
   justify-content: space-between;
 }
+
 .social-list__link {
   width: 44px;
   height: 44px;
@@ -37,9 +42,9 @@
   background-color: inherit;
   fill: currentColor;
   transition: background-color $animation, color $animation;
-}
-.social-list__link:hover,
-.social-list__link:focus {
-  color: $text-white;
-  background-color: $btn-cl;
+  &:hover,
+  &:focus {
+    color: $text-white;
+    background-color: $btn-cl;
+  }
 }

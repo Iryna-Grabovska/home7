@@ -18,8 +18,7 @@
   top: 430px;
   border-style: none;
   transition: background-color $animation, color $animation;
-}
-.btn {
+
   &:hover,
   &:focus {
     background-color: $btn-cl;

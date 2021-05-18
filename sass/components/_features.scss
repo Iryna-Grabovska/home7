@@ -7,10 +7,11 @@
 }
 .feature-list__item {
   flex-basis: 270px;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 }
-.feature-list__item:not(:last-child) {
-  margin-right: 20px;
-}
+
 .features-rectangle {
   height: 120px;
   margin-bottom: 30px;
