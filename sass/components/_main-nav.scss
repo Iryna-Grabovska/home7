@@ -18,14 +18,6 @@
   }
 }
 
-.auts-list__tel:hover .auts-list__icon-tel,
-.auts-list__tel:focus .auts-list__icon-tel {
-  fill: $btn-cl;
-}
-.auts-list__link:hover .auts-list__icon,
-.auts-list__link:focus .auts-list__icon {
-  fill: $btn-cl;
-}
 .auts-list__link,
 .auts-list__tel {
   fill: currentColor;
@@ -74,6 +66,10 @@
     &:hover,
     &:focus {
       color: $btn-cl;
+      fill: $btn-cl;
+    }
+    &:hover .auts-list__icon,
+    &:focus .auts-list__icon {
       fill: $btn-cl;
     }
   }

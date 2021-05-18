@@ -150,16 +150,6 @@ p {
   margin-right: 50px;
 }
 
-.auts-list__tel:hover .auts-list__icon-tel,
-.auts-list__tel:focus .auts-list__icon-tel {
-  fill: #2196f3;
-}
-
-.auts-list__link:hover .auts-list__icon,
-.auts-list__link:focus .auts-list__icon {
-  fill: #2196f3;
-}
-
 .auts-list__link,
 .auts-list__tel {
   fill: currentColor;
@@ -214,6 +204,11 @@ p {
 
 .auth-list .auts-list__link:hover, .auth-list .auts-list__link:focus {
   color: #2196f3;
+  fill: #2196f3;
+}
+
+.auth-list .auts-list__link:hover .auts-list__icon,
+.auth-list .auts-list__link:focus .auts-list__icon {
   fill: #2196f3;
 }
 
