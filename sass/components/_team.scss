@@ -5,11 +5,11 @@
 }
 .team__item:not(:last-child) {
   margin-right: 30px;
-  justify-content: space-between;
 }
 .team__list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .team__card {
