@@ -1,28 +1,26 @@
-.main-nav {
+.header__container {
   display: flex;
   background: $text-white;
-}
-.main-nav .container {
-  align-items: center;
-  display: flex;
+  margin-left: 93px;
+  margin-right: 93px;
 }
 .nav {
   display: flex;
   align-items: center;
-  .site-nav__list {
+  .nav__list {
     display: flex;
     margin-left: 93px;
   }
-  .site-nav__item:not(:last-child) {
+  .nav__item:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.auts-list__link,
-.auts-list__tel {
+.auht__link,
+.auht__tel {
   fill: currentColor;
 }
-.site-nav__link {
+.nav__link {
   font-weight: 500;
   line-height: 1.14;
   color: $main-text-cl;
@@ -36,7 +34,7 @@
     color: $btn-cl;
   }
 }
-.site-nav__link-studia {
+.nav__link-studia {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -46,15 +44,15 @@
   display: block;
   transition: background-color $animation, color $animation;
 }
-.auth-list {
+.auth {
   display: flex;
   margin-left: auto;
   text-align: center;
-  .auts-list__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
   }
 
-  .auts-list__link {
+  .auth__link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -68,25 +66,9 @@
       color: $btn-cl;
       fill: $btn-cl;
     }
-    &:hover .auts-list__icon,
-    &:focus .auts-list__icon {
+    &:hover .auth__icon,
+    &:focus .auth__icon {
       fill: $btn-cl;
-    }
-  }
-
-  &__tel {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $pargf-cl;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-    display: flex;
-    transition: background-color $animation, color $animation;
-    .auth &:hover,
-    .auth &:focus {
-      color: $btn-cl;
     }
   }
 }

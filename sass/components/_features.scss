@@ -2,10 +2,15 @@
   background: $text-white;
   padding-top: 94px;
 }
-.features-list {
+.features {
   display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
 }
-.feature-list__item {
+.features__item {
   flex-basis: 270px;
   &:not(:last-child) {
     margin-right: 20px;
@@ -22,7 +27,7 @@
   background-color: $bg-cl-icon;
   border-radius: 4px;
 }
-.our-team__name {
+.team__name {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.14;
@@ -31,9 +36,8 @@
   margin-top: 0px;
   margin-bottom: 10px;
 }
-.desc {
+.features__desc {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $pargf-cl;
-  margin-bottom: 16px;
 }

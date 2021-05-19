@@ -105,7 +105,8 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -126,14 +127,9 @@ p {
   color: #212121;
 }
 
-.main-nav {
+.header__container {
   display: flex;
   background: #ffffff;
-}
-
-.main-nav .container {
-  align-items: center;
-  display: flex;
 }
 
 .nav {
@@ -141,21 +137,21 @@ p {
   align-items: center;
 }
 
-.nav .site-nav__list {
+.nav .nav__list {
   display: flex;
   margin-left: 93px;
 }
 
-.nav .site-nav__item:not(:last-child) {
+.nav .nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.auts-list__link,
-.auts-list__tel {
+.auht__link,
+.auht__tel {
   fill: currentColor;
 }
 
-.site-nav__link {
+.nav__link {
   font-weight: 500;
   line-height: 1.14;
   color: #212121;
@@ -165,12 +161,12 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav .site-nav__link:hover,
-.nav .site-nav__link:focus {
+.nav .nav__link:hover,
+.nav .nav__link:focus {
   color: #2196f3;
 }
 
-.site-nav__link-studia {
+.nav__link-studia {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -178,20 +174,21 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-list {
+.auth {
   display: flex;
   margin-left: auto;
   text-align: center;
 }
 
-.auth-list .auts-list__item:not(:last-child) {
+.auth .auts-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.auth-list .auts-list__link {
+.auth .auht__link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -199,20 +196,22 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-list .auts-list__link:hover, .auth-list .auts-list__link:focus {
+.auth .auht__link:hover,
+.auth .auht__link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
 
-.auth-list .auts-list__link:hover .auts-list__icon,
-.auth-list .auts-list__link:focus .auts-list__icon {
+.auth .auht__link:hover .auts-list__icon,
+.auth .auht__link:focus .auts-list__icon {
   fill: #2196f3;
 }
 
-.auth-list__tel {
+.auth__tel {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -221,11 +220,12 @@ p {
   padding-bottom: 32px;
   display: block;
   display: flex;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth .auth-list__tel:hover,
-.auth .auth-list__tel:focus {
+.auth .auth__tel:hover,
+.auth .auth__tel:focus {
   color: #2196f3;
 }
 
@@ -234,7 +234,11 @@ p {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/herro.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imeges/herro.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -273,10 +277,12 @@ p {
   left: 700px;
   top: 430px;
   border-style: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #2196f3;
 }
 
@@ -285,7 +291,7 @@ p {
   padding-top: 94px;
 }
 
-.features-list {
+.features {
   display: flex;
 }
 
@@ -307,7 +313,7 @@ p {
   border-radius: 4px;
 }
 
-.our-team__name {
+.team__name {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.14;
@@ -334,7 +340,7 @@ p {
   display: flex;
 }
 
-.our-team__title {
+.team__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -377,38 +383,39 @@ p {
   bottom: 0;
 }
 
-.our-team {
+.team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
-.our-team__list {
+.team__list {
   display: flex;
 }
 
-.our-team__list-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-team__card {
+.team__card {
   background-color: #ffffff;
   text-align: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
 
-.our-team__content {
+.team__content {
   padding: 30px 32px;
 }
 
-.our-team__social {
+.team__social {
   display: flex;
   justify-content: space-between;
 }
 
-.social-list__link {
+.team-social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -419,10 +426,12 @@ p {
   color: #afb1b8;
   background-color: inherit;
   fill: currentColor;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__link:hover, .social-list__link:focus {
+.team-social__link:hover,
+.team-social__link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -456,10 +465,12 @@ p {
   fill: #afb1b8;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients__link:hover, .our-clients__link:focus {
+.our-clients__link:hover,
+.our-clients__link:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -503,7 +514,8 @@ p {
   text-decoration: none;
   margin-bottom: 9px;
   margin-top: 20px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .footer-address:hover,
@@ -581,10 +593,12 @@ p {
   text-decoration: none;
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social__link:hover, .footer-social__link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -653,7 +667,8 @@ p {
   border-radius: 4px;
   border-style: none;
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px;
 }
 
 .our-services .our-services__button:hover,
@@ -662,7 +677,7 @@ p {
   color: #ffffff;
 }
 
-.card-set {
+.portfolio {
   margin-top: 50px;
   padding: 0;
   margin: 0;
@@ -674,24 +689,25 @@ p {
   margin-top: 50px;
 }
 
-.card-set :nth-child(3n) {
+.portfolio :nth-child(3n) {
   margin-right: 0;
 }
 
-.card-set :nth-last-child(-n + 3) {
+.portfolio :nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.card-set__article {
+.portfolio__article {
   width: 370px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-set__article:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio__article:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-set {
+.portfolio {
   margin-top: 50px;
   padding: 0;
   margin: 0;
@@ -700,18 +716,18 @@ p {
   flex-wrap: wrap;
 }
 
-.card-set__item {
+.portfolio__item {
   margin-right: 30px;
   background-color: #ffffff;
   margin-bottom: 30px;
 }
 
-.card-set__img {
+.portfolio__img {
   position: relative;
   overflow: hidden;
 }
 
-.card-set__overlay {
+.portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -723,12 +739,12 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-set__img:focus .card-set__overlay,
-.card-set__img:hover .card-set__overlay {
+.portfolio__img:focus .portfolio__overlay,
+.portfolio__img:hover .portfolio__overlay {
   transform: translateY(0);
 }
 
-.card-set__descr {
+.portfolio__descr {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -747,12 +763,12 @@ p {
   margin-top: 10px;
 }
 
-.card-set__content {
+.portfolio__content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
-.card-set__name {
+.portfolio__name {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -762,7 +778,7 @@ p {
   color: #212121;
 }
 
-.card-set__type {
+.portfolio__type {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -777,10 +793,12 @@ p {
   min-width: 528px;
   min-height: 581px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scaleX(1);
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close {
@@ -798,7 +816,8 @@ p {
   cursor: pointer;
 }
 
-.btn-close:focus, .btn-close:hover {
+.btn-close:focus,
+.btn-close:hover {
   fill: #2196f3;
 }
 

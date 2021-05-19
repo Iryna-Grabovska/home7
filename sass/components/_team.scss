@@ -1,17 +1,18 @@
-.our-team {
+.team {
   background-color: $bg-cl-icon;
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
-.our-team__list {
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+.team__list {
+  list-style: none;
   display: flex;
-  &-item:not(:last-child) {
-    margin-right: 30px;
-  }
+  justify-content: space-between;
 }
 
-.our-team__card {
+.team__card {
   background-color: $text-white;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -20,16 +21,16 @@
   width: 270px;
 }
 
-.our-team__content {
+.team__content {
   padding: 30px 32px;
 }
 
-.our-team__social {
+.team__social {
   display: flex;
   justify-content: space-between;
 }
 
-.social-list__link {
+.team-social__link {
   width: 44px;
   height: 44px;
   display: flex;
