@@ -3,15 +3,18 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.team__item:not(:last-child) {
-  margin-right: 30px;
-}
-.team__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
 
+.team__list {
+  display: flex;
+  padding: 0;
+  flex-basis: 100%;
+}
+.team__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  flex-basis: calc((100% - 30px * 4) / 4);
+}
 .team__card {
   background-color: $text-white;
   text-align: center;
